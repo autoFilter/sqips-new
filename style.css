@@ -100,7 +100,7 @@ Links
 */
 
 a:focus {
-    outline: thin dotted;
+    outline: 0;
 }
 
 /*
@@ -473,6 +473,9 @@ a:visited {
   
 }
 
+a:focus {
+  //color: #1755a0;
+} 
 
 a:hover {
   color: #1755a0;
@@ -520,10 +523,6 @@ a:active {
 
   letter-spacing: -1px;
   padding: 20px 0;
-}
-
-#resources h2 {
-  padding-top: 40px;
 }
 
 #main p {
@@ -705,19 +704,32 @@ footer li {
   margin: 20px 0;
 }
 
+#resources ul {
+  margin-top: 0;
+}
+
 #sidebar li, #resources li {
   font-size: 14px;
   line-height: 20px;
 }
 #resources {
   padding-top: 80px;
-  padding-left: 62px;
+  padding-left: 61px;
   background-image: url('/img/sqipsresbg.png'); /* 44,47,44 */
   min-height: 1000px;
   clear:both;
   border-top: 1px #1755a0 solid;
   border-bottom: 1px #1755a0 solid;
   color:   #c0c0c0;
+}
+#resources h2 {
+  padding-top: 40px;
+  padding-bottom: 0;
+  padding-left: 2em;
+}
+
+#resources li {
+  padding-left: 5em;
 }
 
 #about article, #resources article {
@@ -730,6 +742,7 @@ footer li {
 #about {
 
   padding-top: 80px;
+  padding-left: 61px;
   background-image: url('/img/sqipsbg.png');
   min-height: 1000px;
   clear:both;
