@@ -1,0 +1,22 @@
+$(function() {
+
+  var toc = $('#toc-content');
+
+  $(document).scroll(function() {
+
+	if ($(document).scrollTop() >= 166) {
+	  toc.addClass('fixed-toc');
+	}
+	else {
+	  toc.removeClass('fixed-toc');
+	}
+  });
+
+
+  $('[href="/"]').click(function() {
+	$('html, body').animate({"scrollTop": 0 }, 400);
+	return false;
+  });
+
+
+});
