@@ -469,6 +469,7 @@ a:link {
 }
 a:visited {
   color: #af0000;
+  outline: 0;
   
 }
 
@@ -477,14 +478,9 @@ a:hover {
   color: #1755a0;
 }
 a:active {
-  /* color: #f90; */
   color: #1755a0;
 }
-#logo a {
-  color: #af0000;}
 
-#logo a:hover {
-  color: #1755a0;}
 
 #container {
   background-color: white;
@@ -505,13 +501,27 @@ a:active {
   z-index: 400;
 }
 
-#main h1 {
+#main h1, section h1 {
   font-size: 40px;
   font-weight: normal;
 
   line-height: 40px;
 
   letter-spacing: -1px;
+}
+
+#main h2, section h2 {
+  font-size: 20px;
+  font-weight: normal;
+
+  line-height: 20px;
+
+  letter-spacing: -1px;
+  padding: 20px 0;
+}
+
+#resources h2 {
+  padding-top: 40px;
 }
 
 #main p {
@@ -546,10 +556,10 @@ a:active {
   height:166px;
   position: relative;
   
-  background-image: url("/img/sqipsbanfoot.png");
+  background-image: url("/img/sqipsbanbg.png"); /* 31,33,31 */
   background-repeat: no-repeat;
   background-color:#242624;
-  opacity: .92;
+  //opacity: .92;
   overflow: hidden;
  
 }
@@ -611,9 +621,9 @@ footer {
   // background-color: #498ded;
   /* background-color: #242624; */
   /* opacity: .8; */
-  background-image: url("/img/sqipsbanfoot.png");
+  background-image: url("/img/sqipsbanbg.png");
   background-repeat: no-repeat;
-  opacity: .92;
+  //opacity: .92;
   width: 100%;
   height: 340px;
   // border-top: 2px solid #1e6ac7;
@@ -642,7 +652,7 @@ footer li {
   text-align: left; 
 }
 
- section, #sidebar p {
+ section p, #sidebar p, section li {
  
    font-size: 14px;
  
@@ -652,10 +662,10 @@ footer li {
 
 #chunk {
   position: fixed;
-  bottom: 5%;
-  right:3%;
-  width: 100px;
-  height: 60px;
+  bottom: 4%;
+  right:2%;
+  width: 80px;
+  height: 80px;
   z-index: 10000;
   background-color:    #fff;
   //border: 2px dashed #498ded;
@@ -666,7 +676,15 @@ footer li {
   box-shadow: 2px 3px 7px #444;
   
 }
-
+#chunk a {
+  line-height: 72px;
+  font-size: 46px;
+  font-weight: normal;
+  letter-spacing: -1px;
+  text-align: center;
+  padding-left: 16px;
+  
+}
 
 #sidebar h2 {
   text-transform: uppercase;
@@ -688,12 +706,12 @@ footer li {
 #resources {
   padding-top: 80px;
   padding-left: 62px;
-  background-image: url('/img/sqipsres.png');
+  background-image: url('/img/sqipsresbg.png'); /* 44,47,44 */
   min-height: 1000px;
   clear:both;
   border-top: 1px #1755a0 solid;
   border-bottom: 1px #1755a0 solid;
-  color: white;
+  color:   #c0c0c0;
 }
 
 #about article, #resources article {
