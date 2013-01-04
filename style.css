@@ -472,11 +472,12 @@ a:visited {
   
 }
 
-a:active {
-  /* color: #f90; */
+
+a:hover {
   color: #1755a0;
 }
-a:hover {
+a:active {
+  /* color: #f90; */
   color: #1755a0;
 }
 #logo a {
@@ -617,7 +618,6 @@ footer {
   height: 340px;
   // border-top: 2px solid #1e6ac7;
   border-top: 1px solid #af0000;
-  margin-top: 1.2em;
   clear: both;
 }
 
@@ -642,7 +642,7 @@ footer li {
   text-align: left; 
 }
 
- #sidebar p {
+ section, #sidebar p {
  
    font-size: 14px;
  
@@ -650,14 +650,12 @@ footer li {
    padding-top: 2.4em;
  }
 
-
-
 #chunk {
   position: fixed;
   bottom: 5%;
   right:3%;
   width: 100px;
-  height: 100px;
+  height: 60px;
   z-index: 10000;
   background-color:    #fff;
   //border: 2px dashed #498ded;
@@ -678,12 +676,38 @@ footer li {
   line-height: 20px;
 }
 
-#sidebar ul {
+#sidebar ul, #resources ul {
   list-style-type: none;
   margin: 20px 0;
 }
 
-#sidebar li {
+#sidebar li, #resources li {
   font-size: 14px;
   line-height: 20px;
+}
+#resources {
+  padding-top: 80px;
+  padding-left: 62px;
+  background-image: url('/img/sqipsres.png');
+  min-height: 1000px;
+  clear:both;
+  border-top: 1px #1755a0 solid;
+  border-bottom: 1px #1755a0 solid;
+  color: white;
+}
+
+#about article, #resources article {
+  width: 940px;
+  margin: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+#about {
+  width: 940px;
+  margin: auto;
+  padding-top: 80px;
+  background-image: url('/img/sqipsbg.png');
+  min-height: 1000px;
+  clear:both;
 }
